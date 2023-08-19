@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e ticaret</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>E Ticaret Sitesi</h1>
+      <input type="text" placeholder="urun ismi giriniz..." />
+      <div>
+        <button id="basket" class="btn">Sepet</button>
+        <button class="btn">Kayit ol</button>
+        <button class="btn">Giris yap</button>
+      </div>
+    </header>
+
+    <!--------------- Ana Icerik -->
+    <main>
+      <section id="category-sec">
+        <h1>Kategoriler</h1>
+        <div class="categories"></div>
+      </section>
+      <!-- 
+        urunler -->
+      <section id="product">
+        <h1>Urunler</h1>
+        <div class="products"></div>
+        <!-- ----kart bitti---- -->
+      </section>
+    </main>
+    <!-- modal sepet penceresi -->
+    <div class="modal-wrapper">
+      <div class="modal">
+        <div id="icon">
+          <img id="close" src="image/icons8-close-64 (1).png" />
+        </div>
+        <div id="list"></div>
+        <p id="total">
+          <span id="count">0 urun</span>Toplam:
+          <span id="total-price">0</span>&#8378;
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
